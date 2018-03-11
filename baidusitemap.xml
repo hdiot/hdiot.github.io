@@ -3,46 +3,6 @@
 
 
     
-  <url>
-    <loc>http://yoursite.com/2018/03/11/%E6%95%B0%E6%8D%AE%E5%BA%93/</loc>
-    <lastmod>2018-03-11T08:17:24.025Z</lastmod>
-    <data>
-        <display>
-        <title>数据库</title>
-        <pubTime>2018-03-11T08:07:30.000Z</pubTime>
-        
-        <tag>数据库</tag>
-         
-         
-           
-             
-              <breadCrumb title="Python" url="http://yoursite.com/categories/Python/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://yoursite.com/2018/03/11/hello/</loc>
-    <lastmod>2018-03-11T08:16:52.131Z</lastmod>
-    <data>
-        <display>
-        <title>hello</title>
-        <pubTime>2018-03-11T08:13:45.000Z</pubTime>
-        
-        <tag>杂碎</tag>
-         
-         
-           
-             
-              <breadCrumb title="嵌入式" url="http://yoursite.com/categories/%E5%B5%8C%E5%85%A5%E5%BC%8F/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
     
     
     
