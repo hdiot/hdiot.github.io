@@ -1093,7 +1093,7 @@ pre .javascript .function {
   background: transparent;
 }
 .header {
-  background: url("https://s1.ax1x.com/2018/03/11/9WGZo8.jpg");
+  background: url("https://s1.ax1x.com/2018/03/11/9WYqMj.jpg");
 }
 .header-inner {
   position: relative;
@@ -1825,7 +1825,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #3cc325;
+  background: #06e5bd;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2664,14 +2664,14 @@ embed {
   display: inline-block;
 }
 body {
-  background: rgba(150,150,150,0.5);
+  background: rgba(160,160,160,0.6);
   background-attachment: fixed;
   -webkit-background-size: 1600px 900px;
 }
 .main-inner {
   border-radius: 10px;
   margin-top: 60px;
-  padding: 6px 6px 6px 6px;
+  padding: 1px 1px 1px 1px;
   background: rgba(255,255,255,0);
   min-height: 500px;
 }
@@ -2689,6 +2689,6 @@ body:before {
 .content {
   border-radius: 10px;
   margin-top: 0px;
-  background: rgba(255,255,255,0.5) none repeat scroll !important;
+  background: rgba(255,255,255,0.7) none repeat scroll !important;
   padding: 20px 20px 20px 20px;
 }
