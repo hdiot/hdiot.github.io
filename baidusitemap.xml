@@ -3,6 +3,23 @@
 
 
     
+  <url>
+    <loc>http://yoursite.com/2018/03/10/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0/</loc>
+    <lastmod>2018-03-11T08:50:09.387Z</lastmod>
+    <data>
+        <display>
+        <title>我的第一篇文章</title>
+        <pubTime>2018-03-10T13:15:01.000Z</pubTime>
+        
+        <tag>杂碎</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
     
     
     
@@ -22,22 +39,5 @@
     </url>
 
     
-    
-  <url>
-    <loc>http://yoursite.com/2018/03/10/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0/</loc>
-    <lastmod>2018-03-10T15:09:20.536Z</lastmod>
-    <data>
-        <display>
-        <title>我的第一篇文章</title>
-        <pubTime>2018-03-10T13:15:01.000Z</pubTime>
-        
-        <tag>杂碎</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
     
 </urlset>
