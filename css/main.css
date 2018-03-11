@@ -1104,6 +1104,7 @@ pre .javascript .function {
 }
 .headband {
   height: 3px;
+  height: 0px;
   background: #222;
 }
 .site-meta {
@@ -1844,7 +1845,7 @@ position-fixed-broken-in-chrome-with-flash-behind
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #227382;
+  background: #662b16;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2692,8 +2693,6 @@ body {
   margin-top: 60px;
   padding: 10px 10px 10px 10px;
   background: rgba(255,255,255,0);
-  -webkit-box-shadow: 0px 5px 30px -3px rgba(0,0,0,0.75);
-  -moz-box-shadow: 0px 5px 30px -3px rgba(0,0,0,0.75);
 }
 body:before {
   content: ' ';
@@ -2711,6 +2710,8 @@ body:before {
   margin-top: 0px;
   background: rgba(255,255,255,0) none repeat scroll !important;
   padding: 10px 20px 40px 20px;
+  -webkit-box-shadow: 0px 5px 30px -3px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 5px 30px -3px rgba(0,0,0,0.75);
 }
 .post-button {
   margin-top: 30px;
