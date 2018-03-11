@@ -1825,7 +1825,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #d249ff;
+  background: #38f79c;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2672,8 +2672,7 @@ body {
   border-radius: 10px;
   margin-top: 60px;
   padding: 1px 1px 1px 1px;
-  background: rgba(255,255,255,0);
-  min-height: 500px;
+  background: rgba(255,255,255,0.8);
 }
 body:before {
   content: ' ';
@@ -2689,6 +2688,6 @@ body:before {
 .content {
   border-radius: 10px;
   margin-top: 0px;
-  background: rgba(255,255,255,0.7) none repeat scroll !important;
-  padding: 20px 20px 20px 20px;
+  background: rgba(255,255,255,0.6) none repeat scroll !important;
+  padding: 10px 20px 40px 20px;
 }
