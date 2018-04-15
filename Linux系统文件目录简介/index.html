@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="树," />
+  <meta name="keywords" content="Hexo, NexT" />
 
 
 
@@ -79,20 +79,17 @@
 
 
 
-<meta name="description" content="树的逻辑结构 树的定义：树是 n （n &amp;gt;= 0）个节结点的有限集合。n = 0 时称之为 空树；">
-<meta name="keywords" content="树">
-<meta property="og:type" content="article">
-<meta property="og:title" content="树和二叉树基础">
-<meta property="og:url" content="http://yoursite.com/2018/03/25/树和二叉树基础/index.html">
+<meta name="description" content="rootfs : 根文件系统">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Linux系统文件目录简介">
+<meta property="og:url" content="http://yoursite.com/Linux系统文件目录简介/index.html">
 <meta property="og:site_name" content="mune">
-<meta property="og:description" content="树的逻辑结构 树的定义：树是 n （n &amp;gt;= 0）个节结点的有限集合。n = 0 时称之为 空树；">
+<meta property="og:description" content="rootfs : 根文件系统">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="https://s1.ax1x.com/2018/03/25/9qOPkn.jpg">
-<meta property="og:updated_time" content="2018-03-25T12:01:38.798Z">
+<meta property="og:updated_time" content="2018-04-15T12:45:32.068Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="树和二叉树基础">
-<meta name="twitter:description" content="树的逻辑结构 树的定义：树是 n （n &amp;gt;= 0）个节结点的有限集合。n = 0 时称之为 空树；">
-<meta name="twitter:image" content="https://s1.ax1x.com/2018/03/25/9qOPkn.jpg">
+<meta name="twitter:title" content="Linux系统文件目录简介">
+<meta name="twitter:description" content="rootfs : 根文件系统">
 
 
 
@@ -122,13 +119,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2018/03/25/树和二叉树基础/"/>
+  <link rel="canonical" href="http://yoursite.com/Linux系统文件目录简介/"/>
 
 
 
 
 
-  <title>树和二叉树基础 | mune</title>
+  <title>Linux系统文件目录简介 | mune</title>
   
 
 
@@ -289,476 +286,68 @@
 
   <div id="posts" class="posts-expand">
     
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/03/25/树和二叉树基础/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="mune">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="mune">
-    </span>
-
     
+    
+    <div class="post-block page">
       <header class="post-header">
 
-        
-        
-          <h1 class="post-title" itemprop="name headline">树和二叉树基础</h1>
-        
+	<h1 class="post-title" itemprop="name headline">Linux系统文件目录简介</h1>
 
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-03-25T17:15:07+08:00">
-                2018-03-25
-              </time>
-            
 
-            
 
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/数据结构与算法/" itemprop="url" rel="index">
-                    <span itemprop="name">数据结构与算法</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/2018/03/25/树和二叉树基础/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2018/03/25/树和二叉树基础/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-
-          
-            <span class="post-meta-divider">|</span>
-            <span class="page-pv"><i class="fa fa-file-o"></i> 浏览
-            <span class="busuanzi-value" id="busuanzi_value_page_pv" ></span>次
-            </span>
-          
-
-           
-            <div class="post-wordcount">
-              
-                
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">字数统计&#58;</span>
-                
-                <span title="字数统计">
-                  839 字
-                </span>
-              
-
-              
-                <span class="post-meta-divider">|</span>
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-clock-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
-                
-                <span title="阅读时长">
-                  4 分钟
-                </span>
-              
-            </div>
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
+</header>
 
       
       
-
       
-        <h3 id="树的逻辑结构"><a href="#树的逻辑结构" class="headerlink" title="树的逻辑结构"></a>树的逻辑结构</h3><ol>
-<li><p>树的定义：树是 n （n &gt;= 0）个节结点的有限集合。n = 0 时称之为 空树； <a id="more"></a> 任意非空树满足以下条件：</p>
-<ul>
-<li>有且仅有一个特定的成为 根（root）的结点</li>
-<li>n &gt; 0 时，除根结点外的其余结点被分成 m (m &gt; 0)互不相交的有限集合，每个集合又是一棵树，成为根结点的子树</li>
-</ul>
-</li>
-<li><p>属的基本术语：</p>
-<ul>
-<li>节点的度：结点子树的个数</li>
-<li>树的度：树种各结点度的最大值</li>
-<li>叶子结点（终端结点）：度为零的结点</li>
-<li>分支结点：叶子结点外的结点</li>
-<li>孩子结点、双亲结点、兄弟结点：</li>
-<li>路径、路径长度：由某祖先节点到其某一子孙结点的的线路，该线路唯一，路径中的边数和为路径长度  </li>
-<li>祖先、子孙：<code>自行体会</code></li>
-<li>树的深度：树中节点的最大层数。</li>
-</ul>
-</li>
-<li><p>树的遍历</p>
-<ul>
-<li>前序遍历：<strong><em>根左右</em></strong> </li>
-<li>后序遍历：<strong><em>左右根</em></strong></li>
-<li>层序遍历：上层至下层的从左往右遍历</li>
-</ul>
-</li>
-<li><p>树的存储结构：略</p>
-</li>
-</ol>
-<h3 id="二叉树的逻辑结构"><a href="#二叉树的逻辑结构" class="headerlink" title="二叉树的逻辑结构"></a>二叉树的逻辑结构</h3><blockquote>
+      <div class="post-body">
+        
+        
+          <blockquote>
+<p>rootfs : 根文件系统</p>
 </blockquote>
-<pre><code>template &lt;class DataType&gt;
-struct BiNode 
-{
-    DataType data;
-    BiNode&lt;DataType&gt; * lchild, *rchild;
-}
-</code></pre><p><img src="https://s1.ax1x.com/2018/03/25/9qOPkn.jpg" alt=""></p>
-<ol>
-<li><p>前序遍历</p>
-<pre><code>template&lt;class DataType&gt;
-void BitTree&lt;DataType&gt;::PreOrder(BiNode&lt;DataType&gt; *bt)
-{
-    if(bt ==  null)
-        return;                 // 递归调用的结束条件
-    else 
-    {
-        cout &lt;&lt; bt-&gt;data;       // 访问根节结点数据
-        PreOrder(bt-&gt;lchild);   // 遍历bt 左子树
-        PreOrder(bt-&gt;rchild);   // 遍历bt 右子树
-    }
-}
-</code></pre></li>
-<li><p>中序遍历</p>
-<pre><code>template&lt;class DataType&gt;
-void BitTree&lt;DataType&gt;::InOrder(BiNode&lt;DataType&gt; *bt)
-{
-    if(bt == NULL)
-        return;                 // 递归调用的结束条件
-    else 
-    {
-        PreOrder(bt-&gt;lchild);   // 遍历bt 左子树
-        cout &lt;&lt; bt-&gt;data;       // 访问根节结点数据
-        PreOrder(bt-&gt;rchild);   // 遍历bt 右子树
-    }
-}
-</code></pre></li>
-</ol>
-<ol>
-<li><p>后序遍历：</p>
-<pre><code>template&lt;class DataType&gt;
-void BitTree&lt;DataType&gt;::PostOrder(BiNode&lt;DataType&gt; *bt)
-{
-    if(bt == NULL)
-        return;                 // 递归调用的结束条件
-    else 
-    {
+<a id="more"></a>
+<ul>
+<li>/boot：系统启动相关文件，如内核、initrd、以及grub（bootloader）</li>
+<li>/dev：设备文件<ul>
+<li>块设备：随机访问，数据块</li>
+<li>字符设备：线性访问，按字符为单位</li>
+<li>设备号：主设备号（major）和次设备号（minor）</li>
+</ul>
+</li>
+<li>/etc:配置文件</li>
+<li>/home：用户家目录，每个用户的家目录默认为/home/USERNAME</li>
+<li>/root：管理员的家目录</li>
+<li><p>/lib：库文件</p>
+<ul>
+<li>静态库：.a </li>
+<li>动态库：.dll， .so </li>
+<li>/lib/modules：内核块文件</li>
+</ul>
+</li>
+<li><p>/lib64</p>
+</li>
+<li>/media：挂载点目录，移动设备</li>
+<li>/mnt：挂载点目录，额外的临时文件系统</li>
+<li>/opt：可选目录，第三方程序的安装目录</li>
+<li>/proc：伪文件系统，内核映射文件</li>
+<li>/sys：伪文件系统，跟硬件设备相关的属性映射文件</li>
+<li>/tmp：临时文件，跟硬件设备相关的属性映射文件</li>
+<li>/var：临时文件，/var/tmp：临时文件，跟硬件设备相关的属性映射文件</li>
+<li>/vat：可变文件</li>
+<li>/bin：可执行文件，用户命令</li>
+<li>/sbin：管理命令 </li>
+</ul>
 
-        PreOrder(bt-&gt;lchild);   // 遍历bt 左子树
-        PreOrder(bt-&gt;rchild);   // 遍历bt 右子树
-        cout &lt;&lt; bt-&gt;data;       // 访问根节结点数据
-    }
-}
-</code></pre></li>
-<li><p>层序遍历： </p>
-<pre><code>template&lt;class DataType&gt;
-void BitTree&lt;DataType&gt;::LevelOrder()
-{
-    front = rear = -1;
-    if (root == NULL)
-        return;
-    Q[++rear] = root;
-    while(front != rear)
-    {
-        q = Q[++ front];
-        cout &lt;&lt; q-&gt;date;
-        if (q-&gt;lchild != null)
-            Q[++rear] = q-&gt;lchild;
-        if (q-&gt;rchild != null)
-            Q[++rear] = q-&gt;rchild;
-    }
-}
-</code></pre></li>
-</ol>
-<ol>
-<li><p>二叉树前序遍历非递归算法</p>
-<pre><code>template &lt;class DataType&gt;
-void BiTree&lt;DataType&gt;::PreOrder(BiNode&lt;DataType&gt; * bt)
-{
-    top = -1;                           // 采用顺序栈
-    while (bt =! NULL || top != -1)     // 两个条件都不成立才退出循环
-    {
-        while (bt != NULL)
-        {
-            cout &lt;&lt; bt-&gt;data;
-            s[++top] = bt;              // 根据指针 bt 入栈
-            bt = bt-&gt;lchild;
-        }
-
-        if (top != -1)                  // 栈非空
-        {
-            bt = s[--top];
-            bt = bt-&gt;rchild;
-        }
-    }
-}
-</code></pre></li>
-</ol>
-<ol>
-<li><p>二叉树中序遍历非递归算法</p>
-<pre><code>template &lt;class DataType&gt;
-void BiTree&lt;DataType&gt;::InOrder(BiNode&lt;DataType&gt; * bt)
-{
-    top = -1;                           // 采用顺序栈
-    while (bt =! NULL || top != -1)     // 两个条件都不成立才退出循环
-    {
-        while (bt != NULL)
-        {
-            s[++top] = bt;              // 根据指针 bt 入栈
-            bt = bt-&gt;lchild;
-        }
-
-        if (top != -1)                  // 栈非空
-        {
-            bt = s[--top];
-            cout &lt;&lt; bt-&gt;data;
-            bt = bt-&gt;rchild;
-        }
-    }
-}
-</code></pre></li>
-</ol>
-<ol>
-<li><p>二叉树后序遍历非递归算法</p>
-<pre><code>template &lt;class DataType&gt;
-void BiTree&lt;DataType&gt;::InOrder(BiNode&lt;DataType&gt; * bt)
-{
-    top = -1;                           // 采用顺序栈
-    while (bt =! NULL || top != -1)     // 两个条件都不成立才退出循环
-    {
-        while (bt != NULL)
-        {
-            s[++top] = bt;              // 根据指针 bt 入栈
-            bt = bt-&gt;lchild;
-        }
-
-        if (top != -1)                  // 栈非空
-        {
-            bt = s[--top];
-            bt = bt-&gt;rchild;
-        }
-    }
-}
-</code></pre></li>
-</ol>
-<ol>
-<li><p>后序遍历非递归算法</p>
-<pre><code>template &lt;class DataType&gt;
-struct element 
-{
-    BiNode&lt;DataType&gt; * pre;
-    int flag;
-}
-
-template &lt;class DataType&gt;
-void BiTree&lt;DataType&gt;::PostOrder(BiNode&lt;DataType&gt; * bt)
-{
-    top = -1;
-    while (bt != NULL || top != -1)
-    {
-        while ( top != NULL)
-        {
-            top++;
-            // root 连同标志 flag 入栈
-            s[top].pre = bt;
-            s[top].flag = 1;
-            bt = bt-&gt;lchild;
-        }
-
-        while (top != -1 &amp;&amp; s[top].flag == 2)
-        {
-            bt = s[top--].pre;
-            cout &lt;&lt; bt-&gt;data;
-        }
-
-        if (top != -1)
-        {
-            s[top].flag = 2;
-            bt = s[top].pre-&gt;rchild;
-        }
-    }
-}
-</code></pre></li>
-</ol>
-
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <div>
-      
-      <div>
-    
-        <div style="text-align:center;color: #636363;font-size:16px;letter-spacing: 10px;margin: 50px 0px 0px 0px">
-        	—— 结束 ——
-        </div>
-    
-</div>
-      
-    </div>
-    
-
-    <footer class="post-footer">
-      
-        <div class="post-tags">
-          
-            <a href="/tags/树/" rel="tag"># 树</a>
-          
-        </div>
-      
-
-      
-      
-      
-
-      
-        <div class="post-nav">
-          <div class="post-nav-next post-nav-item">
-            
-              <a href="/2018/03/21/深拷贝与浅浅拷贝/" rel="next" title="深拷贝与浅拷贝">
-                <i class="fa fa-chevron-left"></i> 深拷贝与浅拷贝
-              </a>
-            
-          </div>
-
-          <span class="post-nav-divider"></span>
-
-          <div class="post-nav-prev post-nav-item">
-            
-          </div>
-        </div>
-      
-
-      
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-
-    <div class="post-spread">
-      
         
-  <div class="bdsharebuttonbox">
-    <a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
-    <a href="#" class="bds_douban" data-cmd="douban" title="分享到豆瓣网"></a>
-    <a href="#" class="bds_sqq" data-cmd="sqq" title="分享到QQ好友"></a>
-    <a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a>
-    <a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a>
-    <a href="#" class="bds_tieba" data-cmd="tieba" title="分享到百度贴吧"></a>
-    <a href="#" class="bds_twi" data-cmd="twi" title="分享到Twitter"></a>
-    <a href="#" class="bds_fbook" data-cmd="fbook" title="分享到Facebook"></a>
-    <a href="#" class="bds_more" data-cmd="more"></a>
-    <a class="bds_count" data-cmd="count"></a>
-  </div>
-  <script>
-    window._bd_share_config = {
-      "common": {
-        "bdText": "",
-        "bdMini": "2",
-        "bdMiniList": false,
-        "bdPic": ""
-      },
-      "share": {
-        "bdSize": "16",
-        "bdStyle": "0"
-      },
-      "image": {
-        "viewList": ["tsina", "douban", "sqq", "qzone", "weixin", "twi", "fbook"],
-        "viewText": "分享到：",
-        "viewSize": "16"
-      }
-    }
-  </script>
-
-<script>
-  with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='//bdimg.share.baidu.com/static/api/js/share.js?cdnversion='+~(-new Date()/36e5)];
-</script>
-
+      </div>
+      
+      
       
     </div>
+    
+    
+    
   </div>
 
 
@@ -794,17 +383,8 @@ void BiTree&lt;DataType&gt;::PostOrder(BiNode&lt;DataType&gt; * bt)
       
 
       
-        <ul class="sidebar-nav motion-element">
-          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
-            文章目录
-          </li>
-          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
-            站点概览
-          </li>
-        </ul>
-      
 
-      <section class="site-overview-wrap sidebar-panel">
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -884,22 +464,6 @@ void BiTree&lt;DataType&gt;::PostOrder(BiNode&lt;DataType&gt; * bt)
         </div>
       </section>
 
-      
-      <!--noindex-->
-        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
-          <div class="post-toc">
-
-            
-              
-            
-
-            
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#树的逻辑结构"><span class="nav-number">1.</span> <span class="nav-text">树的逻辑结构</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#二叉树的逻辑结构"><span class="nav-number">2.</span> <span class="nav-text">二叉树的逻辑结构</span></a></li></ol></div>
-            
-
-          </div>
-        </section>
-      <!--/noindex-->
       
 
       
