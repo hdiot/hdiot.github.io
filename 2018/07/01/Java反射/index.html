@@ -87,7 +87,7 @@
 <meta property="og:site_name" content="mune">
 <meta property="og:description" content="一、概述定义：运行状态中，对任意类，可获取其所有方法和属性；对任意对象可调用其任意方法和属性。这种动态操作称之为 Java 反射机制">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-07-01T03:37:58.045Z">
+<meta property="og:updated_time" content="2018-07-01T03:41:09.239Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Java反射">
 <meta name="twitter:description" content="一、概述定义：运行状态中，对任意类，可获取其所有方法和属性；对任意对象可调用其任意方法和属性。这种动态操作称之为 Java 反射机制">
@@ -397,7 +397,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  546 字
+                  542 字
                 </span>
               
 
@@ -453,10 +453,8 @@
 <li>动态生成类框架 （Gson）</li>
 </ol>
 </blockquote>
-<h3 id="反射的具体方法"><a href="#反射的具体方法" class="headerlink" title="反射的具体方法"></a>反射的具体方法</h3><h5 id="获取对象的方法"><a href="#获取对象的方法" class="headerlink" title="获取对象的方法"></a>获取对象的方法</h5><ol>
+<h3 id="反射的具体方法"><a href="#反射的具体方法" class="headerlink" title="反射的具体方法"></a>反射的具体方法</h3><h5 id="获取对象的方法"><a href="#获取对象的方法" class="headerlink" title="获取对象的方法"></a>获取对象的方法</h5><ul>
 <li>Class 类的 <em>forName(String clazzName)</em>  静态方法 参数问完整类名</li>
-</ol>
-<ul>
 <li>通过类的 <em>class</em> 属性</li>
 <li><p>调用对象的 <em>getClass()</em> 方法 </p>
 <pre><code>// 第一种
@@ -468,26 +466,20 @@ Person person = new Person();
 Class&lt;?&gt; class3 = person.getClass();
 </code></pre></li>
 </ul>
-<h5 id="获取成员变量的方法"><a href="#获取成员变量的方法" class="headerlink" title="获取成员变量的方法"></a>获取成员变量的方法</h5><ol>
+<h5 id="获取成员变量的方法"><a href="#获取成员变量的方法" class="headerlink" title="获取成员变量的方法"></a>获取成员变量的方法</h5><ul>
 <li><em>getDeclaredFields()</em> 方法  获取class 对象的所有属性</li>
-</ol>
-<ul>
 <li><em>getField()</em> 方法 获取class 对象的public 属性</li>
 <li><em>getDeclaredField(String propertyName)</em> 方法 通过属性名获取class指定属性</li>
 <li><em>getField(String propertyName)</em> 方法 通过属性名获取class指定public属性</li>
 </ul>
-<h5 id="获取对象方法的方法"><a href="#获取对象方法的方法" class="headerlink" title="获取对象方法的方法"></a>获取<em>对象方法</em>的方法</h5><ol>
+<h5 id="获取对象方法的方法"><a href="#获取对象方法的方法" class="headerlink" title="获取对象方法的方法"></a>获取<em>对象方法</em>的方法</h5><ul>
 <li><em>getDeclaredMethods()</em> 获取 class 对象所有声明的方法</li>
-</ol>
-<ul>
 <li><em>getMethods()</em> 获取 class 对象的所以有的public 方法 （包括父类的方法）</li>
 <li><em>getMethod(String name, Class&lt;?&gt;… parameterTypes)</em> 获取Class 对象对应类的、带指定参数列表的的public 方法 </li>
 <li><em>getDeclaredMethod(String name, Class&lt;?&gt;… parameterTypes)</em>获取Class 对象对应类的、带指定参数列表的的方法 </li>
 </ul>
-<h5 id="获取构造函数的方法"><a href="#获取构造函数的方法" class="headerlink" title="获取构造函数的方法"></a>获取构造函数的方法</h5><ol>
+<h5 id="获取构造函数的方法"><a href="#获取构造函数的方法" class="headerlink" title="获取构造函数的方法"></a>获取构造函数的方法</h5><ul>
 <li><em>getDeclaredonstrutors()</em> 获取class 对象声明的所有构造函数</li>
-</ol>
-<ul>
 <li><em>getConstructors</em> 获取class 对象声明的public构造函数</li>
 <li><em>getDeclaredonstrutor(Class&lt;?&gt;… parameterTypes)</em> 获取指定声明的构造函数</li>
 <li><em>getConstructor(Class&lt;?&gt;… parameterTypes)</em> 获取指定声明的pubilic构造函数</li>
