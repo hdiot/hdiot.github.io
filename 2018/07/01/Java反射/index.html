@@ -87,7 +87,7 @@
 <meta property="og:site_name" content="mune">
 <meta property="og:description" content="一、概述定义：运行状态中，对任意类，可获取其所有方法和属性；对任意对象可调用其任意方法和属性。这种动态操作称之为 Java 反射机制">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-07-01T03:10:07.229Z">
+<meta property="og:updated_time" content="2018-07-01T03:37:58.045Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Java反射">
 <meta name="twitter:description" content="一、概述定义：运行状态中，对任意类，可获取其所有方法和属性；对任意对象可调用其任意方法和属性。这种动态操作称之为 Java 反射机制">
@@ -397,7 +397,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  256 字
+                  546 字
                 </span>
               
 
@@ -413,7 +413,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  1 分钟
+                  2 分钟
                 </span>
               
             </div>
@@ -453,20 +453,50 @@
 <li>动态生成类框架 （Gson）</li>
 </ol>
 </blockquote>
-<h3 id="反射的具体方法"><a href="#反射的具体方法" class="headerlink" title="反射的具体方法"></a>反射的具体方法</h3><h5 id="获取对象的方法"><a href="#获取对象的方法" class="headerlink" title="获取对象的方法"></a>获取对象的方法</h5><ul>
+<h3 id="反射的具体方法"><a href="#反射的具体方法" class="headerlink" title="反射的具体方法"></a>反射的具体方法</h3><h5 id="获取对象的方法"><a href="#获取对象的方法" class="headerlink" title="获取对象的方法"></a>获取对象的方法</h5><ol>
 <li>Class 类的 <em>forName(String clazzName)</em>  静态方法 参数问完整类名</li>
+</ol>
+<ul>
 <li>通过类的 <em>class</em> 属性</li>
 <li><p>调用对象的 <em>getClass()</em> 方法 </p>
 <pre><code>// 第一种
-Person person1 = Class.forName(&quot;com.mune.example.Person&quot;);
+class1 = Class.forName(&quot;com.mune.example.Person&quot;);
 // 第二种
-Person person2 = Person.class;
+class2 = Person.class;
 // 第三种
-Person person3 = new Person();
-Class&lt;?&gt; persion3 = person3.getClass();
+Person person = new Person();
+Class&lt;?&gt; class3 = person.getClass();
 </code></pre></li>
 </ul>
-<h5 id="获取成员变量的方法"><a href="#获取成员变量的方法" class="headerlink" title="获取成员变量的方法"></a>获取成员变量的方法</h5>
+<h5 id="获取成员变量的方法"><a href="#获取成员变量的方法" class="headerlink" title="获取成员变量的方法"></a>获取成员变量的方法</h5><ol>
+<li><em>getDeclaredFields()</em> 方法  获取class 对象的所有属性</li>
+</ol>
+<ul>
+<li><em>getField()</em> 方法 获取class 对象的public 属性</li>
+<li><em>getDeclaredField(String propertyName)</em> 方法 通过属性名获取class指定属性</li>
+<li><em>getField(String propertyName)</em> 方法 通过属性名获取class指定public属性</li>
+</ul>
+<h5 id="获取对象方法的方法"><a href="#获取对象方法的方法" class="headerlink" title="获取对象方法的方法"></a>获取<em>对象方法</em>的方法</h5><ol>
+<li><em>getDeclaredMethods()</em> 获取 class 对象所有声明的方法</li>
+</ol>
+<ul>
+<li><em>getMethods()</em> 获取 class 对象的所以有的public 方法 （包括父类的方法）</li>
+<li><em>getMethod(String name, Class&lt;?&gt;… parameterTypes)</em> 获取Class 对象对应类的、带指定参数列表的的public 方法 </li>
+<li><em>getDeclaredMethod(String name, Class&lt;?&gt;… parameterTypes)</em>获取Class 对象对应类的、带指定参数列表的的方法 </li>
+</ul>
+<h5 id="获取构造函数的方法"><a href="#获取构造函数的方法" class="headerlink" title="获取构造函数的方法"></a>获取构造函数的方法</h5><ol>
+<li><em>getDeclaredonstrutors()</em> 获取class 对象声明的所有构造函数</li>
+</ol>
+<ul>
+<li><em>getConstructors</em> 获取class 对象声明的public构造函数</li>
+<li><em>getDeclaredonstrutor(Class&lt;?&gt;… parameterTypes)</em> 获取指定声明的构造函数</li>
+<li><em>getConstructor(Class&lt;?&gt;… parameterTypes)</em> 获取指定声明的pubilic构造函数</li>
+</ul>
+<h5 id="其他方法"><a href="#其他方法" class="headerlink" title="其他方法"></a>其他方法</h5><pre><code>Annotation[] annotations = (Annotation[]) class1.getAnnotations();//获取class对象的所有注解
+Annotation annotation = (Annotation) class1.getAnnotation(Deprecated.class);//获取class对象指定注解
+Type genericSuperclass = class1.getGenericSuperclass();//获取class对象的直接超类的 Type
+Type[] interfaceTypes = class1.getGenericInterfaces();//获取class对象的所有接口的type集合
+</code></pre>
       
     </div>
     
@@ -710,7 +740,7 @@ Class&lt;?&gt; persion3 = person3.getClass();
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#一、概述"><span class="nav-number">1.</span> <span class="nav-text">一、概述</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#定义："><span class="nav-number">1.0.1.</span> <span class="nav-text">定义：</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#Java-反射机制的功能"><span class="nav-number">1.0.2.</span> <span class="nav-text">Java 反射机制的功能</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#Java-反射机制应用场景"><span class="nav-number">1.0.3.</span> <span class="nav-text">Java 反射机制应用场景</span></a></li></ol></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#反射的具体方法"><span class="nav-number">2.</span> <span class="nav-text">反射的具体方法</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#获取对象的方法"><span class="nav-number">2.0.1.</span> <span class="nav-text">获取对象的方法</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#获取成员变量的方法"><span class="nav-number">2.0.2.</span> <span class="nav-text">获取成员变量的方法</span></a></li></ol></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#一、概述"><span class="nav-number">1.</span> <span class="nav-text">一、概述</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#定义："><span class="nav-number">1.0.1.</span> <span class="nav-text">定义：</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#Java-反射机制的功能"><span class="nav-number">1.0.2.</span> <span class="nav-text">Java 反射机制的功能</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#Java-反射机制应用场景"><span class="nav-number">1.0.3.</span> <span class="nav-text">Java 反射机制应用场景</span></a></li></ol></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#反射的具体方法"><span class="nav-number">2.</span> <span class="nav-text">反射的具体方法</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#获取对象的方法"><span class="nav-number">2.0.1.</span> <span class="nav-text">获取对象的方法</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#获取成员变量的方法"><span class="nav-number">2.0.2.</span> <span class="nav-text">获取成员变量的方法</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#获取对象方法的方法"><span class="nav-number">2.0.3.</span> <span class="nav-text">获取对象方法的方法</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#获取构造函数的方法"><span class="nav-number">2.0.4.</span> <span class="nav-text">获取构造函数的方法</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#其他方法"><span class="nav-number">2.0.5.</span> <span class="nav-text">其他方法</span></a></li></ol></li></ol></li></ol></div>
             
 
           </div>
@@ -744,7 +774,7 @@ Class&lt;?&gt; persion3 = person3.getClass();
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">2.2k</span>
+    <span title="Site words total count">2.5k</span>
   
 </div>
 
