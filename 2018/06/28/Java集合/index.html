@@ -87,7 +87,7 @@
 <meta property="og:site_name" content="mune">
 <meta property="og:description" content="Java 集合类简介Java 集合大致分为：Set 、 List 、 Queue 、 Map s四种体系 - Set 代表无无序、不可重复的集合 - List 代表有序、可重复的集合 - Map 代表具有映射关系的集合 - Queue Java 5 新增 代表队列集合的实现">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-06-28T01:04:16.338Z">
+<meta property="og:updated_time" content="2018-06-28T12:37:08.466Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Java集合">
 <meta name="twitter:description" content="Java 集合类简介Java 集合大致分为：Set 、 List 、 Queue 、 Map s四种体系 - Set 代表无无序、不可重复的集合 - List 代表有序、可重复的集合 - Map 代表具有映射关系的集合 - Queue Java 5 新增 代表队列集合的实现">
@@ -397,7 +397,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  287 字
+                  472 字
                 </span>
               
 
@@ -413,7 +413,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  1 分钟
+                  2 分钟
                 </span>
               
             </div>
@@ -468,9 +468,8 @@ ensureCapacityInternal(size + 1);  // Increments modCount! 自动扩容
 elementData[size++] = e;
 return true;
 }
-</code></pre></li>
-</ul>
-<pre><code>private void ensureCapacityInternal(int minCapacity) {
+
+private void ensureCapacityInternal(int minCapacity) {
     if (elementData == DEFAULTCAPACITY_EMPTY_ELEMENTDATA) {
         minCapacity = Math.max(DEFAULT_CAPACITY, minCapacity);
     }
@@ -497,7 +496,37 @@ private void grow(int minCapacity) {
     // minCapacity is usually close to size, so this is a win:
     elementData = Arrays.copyOf(elementData, newCapacity);
 }
-</code></pre>
+</code></pre></li>
+</ul>
+<blockquote>
+<p>另外， ArraryList 的 set 和 get 方法都有对 index进行检查 rangeCheck(int index)</p>
+<p>此外，ArrayrList 的 remove 方法 使用的是 System.arraycopy()方法，完成复制后 下标减一  系统 GC</p>
+</blockquote>
+<h3 id="LinkedList"><a href="#LinkedList" class="headerlink" title="LinkedList"></a>LinkedList</h3><ul>
+<li><p><em>实现方式:</em>  双链表</p>
+<ul>
+<li>优点：容量无限制</li>
+<li>缺点：查表时需要指针从头/尾移动 性能较低</li>
+</ul>
+</li>
+<li><p>set 和 get 方法 都是使用 node(int index) 方法 该函数会以O(n/2)的性能去获取一个节点</p>
+<pre><code>Node&lt;E&gt; node(int index) {
+    // assert isElementIndex(index);
+    if (index &lt; (size &gt;&gt; 1)) {  // 判断index是在链表的前半部还是后半部，决定从头还是从尾移指针
+        Node&lt;E&gt; x = first;
+        for (int i = 0; i &lt; index; i++)
+            x = x.next;
+        return x;
+    } else {
+        Node&lt;E&gt; x = last;
+        for (int i = size - 1; i &gt; index; i--)
+            x = x.prev;
+        return x;
+    }
+}
+</code></pre></li>
+</ul>
+
       
     </div>
     
@@ -549,6 +578,10 @@ private void grow(int minCapacity) {
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/07/01/Java反射/" rel="prev" title="Java反射">
+                Java反射 <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -670,7 +703,7 @@ private void grow(int minCapacity) {
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">7</span>
+                  <span class="site-state-item-count">8</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -741,7 +774,7 @@ private void grow(int minCapacity) {
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Java-集合类简介"><span class="nav-number">1.</span> <span class="nav-text">Java 集合类简介</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#ArrayList"><span class="nav-number">1.1.</span> <span class="nav-text">ArrayList</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Java-集合类简介"><span class="nav-number">1.</span> <span class="nav-text">Java 集合类简介</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#ArrayList"><span class="nav-number">1.1.</span> <span class="nav-text">ArrayList</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#LinkedList"><span class="nav-number">1.2.</span> <span class="nav-text">LinkedList</span></a></li></ol></li></ol></div>
             
 
           </div>
@@ -775,7 +808,7 @@ private void grow(int minCapacity) {
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">1.7k</span>
+    <span title="Site words total count">2.2k</span>
   
 </div>
 

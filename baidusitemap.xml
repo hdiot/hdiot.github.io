@@ -4,8 +4,28 @@
 
     
   <url>
+    <loc>http://yoursite.com/2018/07/01/Java%E5%8F%8D%E5%B0%84/</loc>
+    <lastmod>2018-07-01T03:08:05.526Z</lastmod>
+    <data>
+        <display>
+        <title>Java反射</title>
+        <pubTime>2018-07-01T02:34:06.000Z</pubTime>
+        
+        <tag>Java 基础</tag>
+         
+         
+           
+             
+              <breadCrumb title="Java" url="http://yoursite.com/categories/Java/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://yoursite.com/2018/06/28/Java%E9%9B%86%E5%90%88/</loc>
-    <lastmod>2018-06-28T01:04:16.338Z</lastmod>
+    <lastmod>2018-06-28T12:37:08.466Z</lastmod>
     <data>
         <display>
         <title>Java集合</title>
