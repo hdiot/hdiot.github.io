@@ -393,7 +393,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  0 字
+                  150 字
                 </span>
               
 
@@ -432,7 +432,56 @@
       
         
           
-            
+            <center><h1>Dagger 2 学习手记</h1></center>
+
+<h3 id="导读：依赖注入"><a href="#导读：依赖注入" class="headerlink" title="导读：依赖注入"></a>导读：依赖注入</h3><h4 id="什么是依赖注入"><a href="#什么是依赖注入" class="headerlink" title="什么是依赖注入"></a>什么是依赖注入</h4><blockquote>
+<p>依赖注入 <code>Dependency Injection</code>, 用于实现 控制反转 <code>Inversion of Control</code></p>
+</blockquote>
+<h4 id="为什么使用依赖注入"><a href="#为什么使用依赖注入" class="headerlink" title="为什么使用依赖注入"></a>为什么使用依赖注入</h4><blockquote>
+<p>控制反转用于解耦 类之间的耦合关系</p>
+</blockquote>
+<h4 id="依赖注入的方式"><a href="#依赖注入的方式" class="headerlink" title="依赖注入的方式"></a>依赖注入的方式</h4><blockquote>
+<h5 id="1-构造函数注入"><a href="#1-构造函数注入" class="headerlink" title="1. 构造函数注入"></a>1. 构造函数注入</h5></blockquote>
+<pre><code>public class Gun {
+    private Bullet bullet;
+    public Gun(Bullet b) {
+        this.bullet = b;
+    }
+}
+</code></pre><blockquote>
+<h5 id="2-方法注入"><a href="#2-方法注入" class="headerlink" title="2. 方法注入"></a>2. 方法注入</h5></blockquote>
+<pre><code>public class Gun {
+    // ...
+    private Bullet bullet;
+
+    public void setBullet(Bullet b) {
+        this.bullet = b;
+    }
+}
+</code></pre><blockquote>
+<h5 id="3-接口注入"><a href="#3-接口注入" class="headerlink" title="3. 接口注入"></a>3. 接口注入</h5></blockquote>
+<pre><code>public interface BulletProvider{
+    // ...
+    setBullet(Bullet b);
+}
+</code></pre><blockquote>
+</blockquote>
+<pre><code>public interface IBullet{
+    // ...
+}
+</code></pre><blockquote>
+</blockquote>
+<pre><code>public class Gun implements BulletProvider {
+    private IBullet bullet;
+    // ...
+    public void setBullet(IBullet b) {
+        this.bullet = b;
+    }
+}
+</code></pre><h3 id="什么时Dagger"><a href="#什么时Dagger" class="headerlink" title="什么时Dagger"></a>什么时Dagger</h3><hr>
+<h3 id="为什么使用Dagger"><a href="#为什么使用Dagger" class="headerlink" title="为什么使用Dagger"></a>为什么使用Dagger</h3><hr>
+<h3 id="Dagger使用"><a href="#Dagger使用" class="headerlink" title="Dagger使用"></a>Dagger使用</h3><hr>
+
           
         
       
@@ -2139,7 +2188,7 @@
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">2.5k</span>
+    <span title="Site words total count">2.6k</span>
   
 </div>
 
