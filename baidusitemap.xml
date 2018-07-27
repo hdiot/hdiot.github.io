@@ -4,12 +4,32 @@
 
     
   <url>
-    <loc>http://yoursite.com/2018/07/01/Java%E5%8F%8D%E5%B0%84/</loc>
-    <lastmod>2018-07-01T03:45:33.272Z</lastmod>
+    <loc>http://yoursite.com/2018/07/23/Dagger-2-%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/</loc>
+    <lastmod>2018-07-23T07:38:00.323Z</lastmod>
     <data>
         <display>
-        <title>Java反射</title>
-        <pubTime>2018-07-01T02:34:06.000Z</pubTime>
+        <title>Dagger 2 学习记录</title>
+        <pubTime>2018-07-23T07:36:36.000Z</pubTime>
+        
+        <tag>Android,框架</tag>
+         
+         
+           
+             
+              <breadCrumb title="Android" url="http://yoursite.com/categories/Android/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://yoursite.com/2018/06/28/Java%E9%9B%86%E5%90%88/</loc>
+    <lastmod>2018-07-04T01:46:25.947Z</lastmod>
+    <data>
+        <display>
+        <title>Java集合</title>
+        <pubTime>2018-06-28T00:42:22.000Z</pubTime>
         
         <tag>Java 基础</tag>
          
@@ -24,12 +44,12 @@
 
     
   <url>
-    <loc>http://yoursite.com/2018/06/28/Java%E9%9B%86%E5%90%88/</loc>
-    <lastmod>2018-06-28T12:37:08.466Z</lastmod>
+    <loc>http://yoursite.com/2018/07/01/Java%E5%8F%8D%E5%B0%84/</loc>
+    <lastmod>2018-07-01T03:45:33.272Z</lastmod>
     <data>
         <display>
-        <title>Java集合</title>
-        <pubTime>2018-06-28T00:42:22.000Z</pubTime>
+        <title>Java反射</title>
+        <pubTime>2018-07-01T02:34:06.000Z</pubTime>
         
         <tag>Java 基础</tag>
          

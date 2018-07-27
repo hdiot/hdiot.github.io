@@ -87,7 +87,7 @@
 <meta property="og:site_name" content="mune">
 <meta property="og:description" content="Java 集合类简介Java 集合大致分为：Set 、 List 、 Queue 、 Map s四种体系 - Set 代表无无序、不可重复的集合 - List 代表有序、可重复的集合 - Map 代表具有映射关系的集合 - Queue Java 5 新增 代表队列集合的实现">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-06-28T12:37:08.466Z">
+<meta property="og:updated_time" content="2018-07-04T01:46:25.947Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Java集合">
 <meta name="twitter:description" content="Java 集合类简介Java 集合大致分为：Set 、 List 、 Queue 、 Map s四种体系 - Set 代表无无序、不可重复的集合 - List 代表有序、可重复的集合 - Map 代表具有映射关系的集合 - Queue Java 5 新增 代表队列集合的实现">
@@ -397,7 +397,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  472 字
+                  494 字
                 </span>
               
 
@@ -526,7 +526,14 @@ private void grow(int minCapacity) {
 }
 </code></pre></li>
 </ul>
-
+<h3 id="HashMap"><a href="#HashMap" class="headerlink" title="HashMap"></a>HashMap</h3><blockquote>
+<p>hash值的计算：</p>
+</blockquote>
+<pre><code>char val[] = value;
+for (int i = 0; i &lt; value.length; i++) {
+    h = 31 * h + val[i];
+}
+</code></pre>
       
     </div>
     
@@ -703,7 +710,7 @@ private void grow(int minCapacity) {
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">8</span>
+                  <span class="site-state-item-count">9</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -714,7 +721,7 @@ private void grow(int minCapacity) {
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">5</span>
+                  <span class="site-state-item-count">6</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
@@ -725,7 +732,7 @@ private void grow(int minCapacity) {
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">5</span>
+                  <span class="site-state-item-count">6</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -774,7 +781,7 @@ private void grow(int minCapacity) {
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Java-集合类简介"><span class="nav-number">1.</span> <span class="nav-text">Java 集合类简介</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#ArrayList"><span class="nav-number">1.1.</span> <span class="nav-text">ArrayList</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#LinkedList"><span class="nav-number">1.2.</span> <span class="nav-text">LinkedList</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Java-集合类简介"><span class="nav-number">1.</span> <span class="nav-text">Java 集合类简介</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#ArrayList"><span class="nav-number">1.1.</span> <span class="nav-text">ArrayList</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#LinkedList"><span class="nav-number">1.2.</span> <span class="nav-text">LinkedList</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#HashMap"><span class="nav-number">1.3.</span> <span class="nav-text">HashMap</span></a></li></ol></li></ol></div>
             
 
           </div>
